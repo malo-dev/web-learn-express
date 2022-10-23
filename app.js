@@ -1,16 +1,10 @@
-const express = require('express');
+// how to make som in array
+const array = [3, 5, 9, 15] 
+const sum = array.reduce((paramone, paramtwo) => paramone + paramtwo,0)
+console.log(sum)
+// max of array
 
-
-let app = express()
-app.get('/api/about', (req, res) => {
-	res.sendFile(__dirname + "/views/about.html")
-});
-app.get('/api/blog', (req, res) => {
-	res.sendFile(__dirname + "/views/blog.html")
-});
-
-app.get('/api/home', (req, res) => {
-	res.sendFile(__dirname + "/views/home.html")
-});
-
-app.listen(4000)
+console.log([5, 4, 2, 10, 15, 5].max())
+// how to filter an array
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter((value)=> value)
+console.log(arr)

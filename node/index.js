@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const pug = require('pug')
 app.set('views engine', 'pug')
+app.set('views', 'view')
 app.get('/', function (req, res) {
 	res.render(
 		'sample',
